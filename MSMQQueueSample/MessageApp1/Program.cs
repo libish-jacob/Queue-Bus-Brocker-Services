@@ -39,6 +39,8 @@ namespace MessageApp1
             if (message.StartsWith("~"))
             {
                 category = "High";
+
+                /*Set priority. Queue will process message based on the priority.*/
                 messageQueue.DefaultPropertiesToSend.Priority = MessagePriority.High;
             }
 
